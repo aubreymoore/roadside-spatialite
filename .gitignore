@@ -1,2 +1,12 @@
 .ipynb_checkpoints
+*.aux
+*.lof
+*.log
+*.lol
+*.out
+*.gz
+*.toc
+
+
+
 

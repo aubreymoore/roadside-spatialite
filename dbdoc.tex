@@ -1,0 +1,72 @@
+\documentclass[]{scrartcl}
+
+\usepackage{listings}
+\usepackage[
+unicode=true,pdfusetitle,
+bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+breaklinks=true,pdfborder={0 0 1},backref=false,colorlinks=true,
+urlcolor=blue,linkcolor=blue
+]{hyperref}
+%\hypersetup{
+%	urlcolor=blue,linkcolor=blue}
+
+
+
+% Title Page
+\titlehead{Technical Report}
+\title{Development of Automated Roadside Video Surveys for Detecting and Monitoring Coconut Rhinoceros Beetle Damage}
+\author{Aubrey Moore}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+\lstlistoflistings
+
+\newpage
+
+%\begin{abstract}
+%\end{abstract}
+
+\section{Recording Roadside Videos}
+
+\section{Detecting CRB Damage in Video Frames}
+
+\section{Creating a CRB Damage Survey Database}
+
+Have a look at Listing \ref{create_tables}.
+
+\label{create_tables}
+\lstinputlisting[
+	language=SQL,
+	basicstyle=\tiny, 
+	caption={create\_tables.sql},
+	float,
+	label=create_tables,
+	]{create_tables.sql}
+
+\lstinputlisting[
+	language=SQL,
+	basicstyle=\tiny, 
+	caption={create\_views.sql},
+	float
+	]{create_views.sql}
+
+\lstinputlisting[
+	language=SQL,
+	basicstyle=\tiny, 
+	caption={create\_grid.sql},
+	float
+	]{create_grid.sql}
+
+
+\section{Visualizing Survey Results on a Map}
+
+\lstinputlisting[
+	language=Python,
+	basicstyle=\tiny, 
+	caption={create\_crb\_damage\_map.py},
+	float
+	]{make_crb_damage_map.py}
+
+\end{document}          
